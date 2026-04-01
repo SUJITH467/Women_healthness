@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Women's Health & Wellness — your guide to physical health, mental wellness, and daily wellbeing." />
+  <title>Women's Health &amp; Wellness</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+        integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- AOS (Animate On Scroll) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+        integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ===== HEADER / NAV ===== -->
+  <header>
+    <nav id="main-nav" aria-label="Main navigation">
+      <div class="nav-brand">
+        <a href="#hero" aria-label="Women's Health &amp; Wellness home">
+          <i class="fa-solid fa-heart-pulse" aria-hidden="true"></i>
+          <span>Women's Wellness</span>
+        </a>
+      </div>
+
+      <div class="auth-actions">
+        <button class="btn btn-outline" id="login-btn" aria-label="Login">Login</button>
+        <button class="btn btn-primary" id="signup-btn" aria-label="Sign Up">Sign Up</button>
+      </div>
+
+      <button class="nav-hamburger" id="hamburger-btn" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-links">
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+      </button>
+
+      <ul class="nav-links" id="nav-links" role="list">
+        <li><a href="#hero" class="nav-link">Home</a></li>
+        <li class="nav-group">
+          <button class="nav-link nav-group-btn" aria-haspopup="true" aria-expanded="false">Wellness</button>
+          <ul class="nav-submenu" aria-label="Wellness submenu">
+            <li><a href="#physical-health" class="nav-link">Physical Health</a></li>
+            <li><a href="#mental-wellness" class="nav-link">Mental Wellness</a></li>
+            <li><a href="#hormonal-health" class="nav-link">Hormonal Health</a></li>
+          </ul>
+        </li>
+        <li class="nav-group">
+          <button class="nav-link nav-group-btn" aria-haspopup="true" aria-expanded="false">Tools</button>
+          <ul class="nav-submenu" aria-label="Tools submenu">
+            <li><a href="#wellness-tracker" class="nav-link">Tracker</a></li>
+            <li><a href="#ai-insights" class="nav-link">AI Insights</a></li>
+            <li><a href="#symptom-checker" class="nav-link">Symptom Checker</a></li>
+          </ul>
+        </li>
+        <li><a href="#social-feed" class="nav-link">Community</a></li>
+        <li><a href="#daily-updates" class="nav-link">Daily Updates</a></li>
+        <li><a href="#help-desk" class="nav-link">Help</a></li>
+        <li><a href="#blog" class="nav-link">Blog</a></li>
+      </ul>
+
+      <button class="theme-toggle" id="theme-toggle-btn" aria-label="Toggle dark/light mode">
+        <i class="fa-solid fa-moon" aria-hidden="true"></i>
+      </button>
+    </nav>
+  </header>
+
+  <!-- ===== MAIN CONTENT ===== -->
+  <main>
+
+    <!-- 1. Hero Section -->
+    <section id="hero" aria-labelledby="hero-heading">
+      <div class="hero-content">
+        <h1 id="hero-heading" class="hero-headline">Your Wellness Journey Starts Here</h1>
+        <p class="hero-subtext">Empowering women with knowledge, tools, and inspiration for a healthier, happier life.</p>
+        <a href="#physical-health" class="btn btn-primary cta-btn" role="button">Start Your Wellness Journey</a>
+      </div>
+    </section>
+
+    <!-- 2. Physical Health Section -->
+    <section id="physical-health" aria-labelledby="physical-health-heading">
+      <div class="section-container">
+        <h2 id="physical-health-heading">Physical Health</h2>
+        <p class="section-subtitle">Build healthy habits for a stronger, more energetic you.</p>
+        <div class="cards-grid" id="physical-health-cards">
+          <div class="card" data-aos="fade-up">
+            <i class="fa-solid fa-dumbbell" aria-hidden="true"></i>
+            <h3>Exercise</h3>
+            <p>Regular physical activity boosts energy and mood.</p>
+            <div class="card-overlay">
+              <p>Find activities you enjoy, like walking, yoga, or strength training. Aim for 150 minutes of moderate exercise per week.</p>
+            </div>
+          </div>
+          <div class="card" data-aos="fade-up" data-aos-delay="100">
+            <i class="fa-solid fa-utensils" aria-hidden="true"></i>
+            <h3>Diet</h3>
+            <p>Nutritious eating supports overall health.</p>
+            <div class="card-overlay">
+              <p>Focus on whole foods, fruits, vegetables, lean proteins, and healthy fats. Stay hydrated and mindful of portion sizes.</p>
+            </div>
+          </div>
+          <div class="card" data-aos="fade-up" data-aos-delay="200">
+            <i class="fa-solid fa-moon" aria-hidden="true"></i>
+            <h3>Sleep</h3>
+            <p>Quality sleep is essential for recovery.</p>
+            <div class="card-overlay">
+              <p>Aim for 7-9 hours per night. Maintain a consistent sleep schedule and create a relaxing bedtime routine.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Mental Wellness Section -->
+    <section id="mental-wellness" aria-labelledby="mental-wellness-heading">
+      <div class="section-container">
+        <h2 id="mental-wellness-heading">Mental Wellness</h2>
+        <p class="section-subtitle">Nurture your mind with proven strategies for calm and clarity.</p>
+        <div class="accordion" id="mental-wellness-accordion">
+          <div class="accordion-item">
+            <button class="accordion-trigger" aria-expanded="false">
+              <span>Stress Management</span>
+              <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
+            </button>
+            <div class="accordion-content">
+              <p>Practice deep breathing exercises, meditation, or progressive muscle relaxation to reduce stress levels. Take time for self-care activities that bring you joy and relaxation.</p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button class="accordion-trigger" aria-expanded="false">
+              <span>Mindfulness</span>
+              <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
+            </button>
+            <div class="accordion-content">
+              <p>Stay present in the moment through mindfulness meditation or mindful eating. Apps and guided sessions can help you develop this practice for better mental clarity.</p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button class="accordion-trigger" aria-expanded="false">
+              <span>Emotional Health</span>
+              <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
+            </button>
+            <div class="accordion-content">
+              <p>Express your emotions through journaling, talking with friends, or professional counseling. Building emotional resilience helps you navigate life's challenges with strength.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Hormonal Health Section -->
+    <section id="hormonal-health" aria-labelledby="hormonal-health-heading">
+      <div class="section-container">
+        <h2 id="hormonal-health-heading">Hormonal &amp; Women-Specific Health</h2>
+        <p class="section-subtitle">Understanding your body at every stage of life.</p>
+        <div class="tabs-container" id="hormonal-health-tabs" data-aos="fade-up">
+          <div class="tabs-nav">
+            <button class="tab-btn" data-tab="menstrual-panel">Menstrual Health</button>
+            <button class="tab-btn" data-tab="pregnancy-panel">Pregnancy</button>
+            <button class="tab-btn" data-tab="pcos-panel">PCOS</button>
+          </div>
+          <div id="menstrual-panel" class="tab-panel">
+            <h3>Menstrual Health</h3>
+            <p>Track your cycle, understand your body's signals, and learn about menstrual disorders. Regular check-ups and cycle tracking apps can help you stay informed.</p>
+          </div>
+          <div id="pregnancy-panel" class="tab-panel">
+            <h3>Pregnancy Wellness</h3>
+            <p>Focus on prenatal nutrition, exercise, and mental health during pregnancy. Consult healthcare providers for personalized guidance throughout this journey.</p>
+          </div>
+          <div id="pcos-panel" class="tab-panel">
+            <h3>PCOS Management</h3>
+            <p>Polycystic Ovary Syndrome affects many women. Lifestyle changes, medication, and regular monitoring can help manage symptoms and improve quality of life.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. Daily Wellness Tracker Section -->
+    <section id="wellness-tracker" aria-labelledby="wellness-tracker-heading">
+      <div class="section-container">
+        <h2 id="wellness-tracker-heading">Daily Wellness Tracker</h2>
+        <p class="section-subtitle">Track your water, mood, and movement every day.</p>
+        <div class="tracker-widget" id="tracker-widget">
+          <div class="tracker-row">
+            <label for="water-count">Water Intake:</label>
+            <button id="water-decrement" aria-label="Decrease water count">-</button>
+            <span id="water-count">0</span>
+            <button id="water-increment" aria-label="Increase water count">+</button>
+            <div class="progress-bar-track">
+              <div class="progress-bar-fill" id="water-progress"></div>
+            </div>
+          </div>
+          <div class="tracker-row">
+            <label>Mood:</label>
+            <div class="mood-buttons">
+              <button class="mood-btn" data-mood="happy" aria-label="Happy mood" aria-pressed="false">😊</button>
+              <button class="mood-btn" data-mood="neutral" aria-label="Neutral mood" aria-pressed="false">😐</button>
+              <button class="mood-btn" data-mood="sad" aria-label="Sad mood" aria-pressed="false">😢</button>
+              <button class="mood-btn" data-mood="stressed" aria-label="Stressed mood" aria-pressed="false">😰</button>
+              <button class="mood-btn" data-mood="excited" aria-label="Excited mood" aria-pressed="false">🤩</button>
+            </div>
+          </div>
+          <div class="tracker-row">
+            <label for="exercise-check">Exercise Today:</label>
+            <input type="checkbox" id="exercise-check" aria-label="Exercise completed today">
+          </div>
+          <button id="tracker-reset" class="btn btn-primary">Reset Tracker</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- AI Health Insights Section -->
+    <section id="ai-insights" aria-labelledby="ai-insights-heading">
+      <div class="section-container">
+        <h2 id="ai-insights-heading">AI Health Insights</h2>
+        <p class="section-subtitle">Personalized wellness analysis powered by artificial intelligence.</p>
+        <div id="ai-insights-container" class="ai-insights-container">
+          <div class="ai-insights-content">
+            <div class="insight-card overall">
+              <h3>Overall Wellness Assessment</h3>
+              <p>Start tracking your wellness data to unlock personalized AI insights!</p>
+            </div>
+            <div class="insight-card recommendations">
+              <h3>Personalized Recommendations</h3>
+              <ul>
+                <li>Begin with the wellness tracker above to log your sleep, water intake, mood, and activity.</li>
+                <li>Consistency is key - aim to track daily for the most accurate insights.</li>
+                <li>Use the AI chatbot for immediate wellness support and guidance.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- AI Symptom Checker Section -->
+    <section id="symptom-checker" aria-labelledby="symptom-checker-heading">
+      <div class="section-container">
+        <h2 id="symptom-checker-heading">AI Symptom Checker</h2>
+        <p class="section-subtitle">Get preliminary wellness insights based on your symptoms. <em>This is not medical advice.</em></p>
+
+        <div class="symptom-checker-container">
+          <div class="symptom-input-section">
+            <div class="symptom-search">
+              <input type="text" id="symptom-input" placeholder="Describe your symptoms (e.g., headache, fatigue, nausea)" aria-label="Enter symptoms">
+              <button id="symptom-add-btn" class="btn btn-secondary">Add Symptom</button>
+            </div>
+            <div id="selected-symptoms" class="selected-symptoms" aria-live="polite"></div>
+          </div>
+
+          <div class="symptom-analysis-section">
+            <button id="analyze-symptoms-btn" class="btn btn-primary">Analyze Symptoms</button>
+            <div id="analysis-results" class="analysis-results" aria-live="polite"></div>
+          </div>
+
+          <div class="disclaimer-box">
+            <i class="fa-solid fa-exclamation-triangle" aria-hidden="true"></i>
+            <div>
+              <strong>Medical Disclaimer:</strong> This tool provides general wellness information only and is not a substitute for professional medical advice, diagnosis, or treatment. Always consult with a qualified healthcare provider for any health concerns.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. Testimonials / Quotes Carousel Section -->
+    <section id="testimonials" aria-labelledby="testimonials-heading">
+      <div class="section-container">
+        <h2 id="testimonials-heading">Inspiration &amp; Testimonials</h2>
+        <p class="section-subtitle">Real stories from real women on their wellness journeys.</p>
+        <div class="carousel" id="quotes-carousel" aria-live="polite">
+          <div class="carousel-slide active">
+            <blockquote>
+              <p>"This platform has transformed my approach to wellness. The tools and information are empowering and easy to use."</p>
+              <cite>— Sarah M., 32</cite>
+            </blockquote>
+          </div>
+          <div class="carousel-slide">
+            <blockquote>
+              <p>"Finally, a resource that understands women's unique health needs. The tracker has become part of my daily routine."</p>
+              <cite>— Emily R., 28</cite>
+            </blockquote>
+          </div>
+          <div class="carousel-slide">
+            <blockquote>
+              <p>"The mental wellness tips have helped me manage stress better. Highly recommend for any woman prioritizing her health."</p>
+              <cite>— Jessica L., 35</cite>
+            </blockquote>
+          </div>
+          <div class="carousel-slide">
+            <blockquote>
+              <p>"Comprehensive and compassionate. This site covers everything from hormonal health to daily habits."</p>
+              <cite>— Maria G., 29</cite>
+            </blockquote>
+          </div>
+          <div class="carousel-controls">
+            <button id="carousel-prev" aria-label="Previous testimonial">‹</button>
+            <div class="carousel-dots">
+              <button class="carousel-dot active" aria-label="Go to testimonial 1"></button>
+              <button class="carousel-dot" aria-label="Go to testimonial 2"></button>
+              <button class="carousel-dot" aria-label="Go to testimonial 3"></button>
+              <button class="carousel-dot" aria-label="Go to testimonial 4"></button>
+            </div>
+            <button id="carousel-next" aria-label="Next testimonial">›</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. Blog / Resources Section -->
+    <section id="blog" aria-labelledby="blog-heading">
+      <div class="section-container">
+        <h2 id="blog-heading">Blog &amp; Resources</h2>
+        <p class="section-subtitle">Deepen your knowledge with expert-backed wellness articles.</p>
+        <div class="articles-grid" id="blog-cards">
+          <article class="card" data-aos="fade-up">
+            <i class="fa-solid fa-brain" aria-hidden="true"></i>
+            <h3>Mindful Eating for Hormonal Balance</h3>
+            <p>Learn how conscious eating can support your hormonal health and overall wellbeing.</p>
+            <a href="#" class="btn btn-primary">Read More</a>
+          </article>
+          <article class="card" data-aos="fade-up" data-aos-delay="100">
+            <i class="fa-solid fa-heartbeat" aria-hidden="true"></i>
+            <h3>Cardio vs. Strength: What's Best for Women?</h3>
+            <p>Explore the benefits of different exercise types and how they impact women's health.</p>
+            <a href="#" class="btn btn-primary">Read More</a>
+          </article>
+          <article class="card" data-aos="fade-up" data-aos-delay="200">
+            <i class="fa-solid fa-moon" aria-hidden="true"></i>
+            <h3>Sleep Hygiene Tips for Better Rest</h3>
+            <p>Discover practical strategies to improve your sleep quality and duration.</p>
+            <a href="#" class="btn btn-primary">Read More</a>
+          </article>
+          <article class="card" data-aos="fade-up" data-aos-delay="300">
+            <i class="fa-solid fa-users" aria-hidden="true"></i>
+            <h3>Building a Support Network</h3>
+            <p>The importance of community and relationships in maintaining mental wellness.</p>
+            <a href="#" class="btn btn-primary">Read More</a>
+          </article>
+          <article class="card" data-aos="fade-up" data-aos-delay="400">
+            <i class="fa-solid fa-apple-whole" aria-hidden="true"></i>
+            <h3>Nutrition During Menopause</h3>
+            <p>Essential nutrients and dietary changes to support you through this life stage.</p>
+            <a href="#" class="btn btn-primary">Read More</a>
+          </article>
+          <article class="card" data-aos="fade-up" data-aos-delay="500">
+            <i class="fa-solid fa-spa" aria-hidden="true"></i>
+            <h3>Self-Care Rituals for Busy Women</h3>
+            <p>Simple, effective self-care practices that fit into even the busiest schedules.</p>
+            <a href="#" class="btn btn-primary">Read More</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Social Media Feed Section -->
+    <section id="social-feed" aria-labelledby="social-feed-heading">
+      <div class="section-container">
+        <h2 id="social-feed-heading">Community Feed</h2>
+        <p class="section-subtitle">Stay connected with the latest wellness conversations and inspiration from our community.</p>
+
+        <div class="social-feed-container">
+          <div class="feed-filters">
+            <button class="feed-filter active" data-platform="all">All</button>
+            <button class="feed-filter" data-platform="instagram">Instagram</button>
+            <button class="feed-filter" data-platform="twitter">Twitter</button>
+            <button class="feed-filter" data-platform="facebook">Facebook</button>
+          </div>
+
+          <div id="social-posts" class="social-posts-grid">
+            <!-- Posts will be loaded dynamically -->
+          </div>
+
+          <div class="feed-actions">
+            <button id="load-more-posts" class="btn btn-secondary">Load More Posts</button>
+            <a href="#" class="btn btn-primary">Join the Conversation</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Daily Life Updates Section -->
+    <section id="daily-updates" aria-labelledby="daily-updates-heading">
+      <div class="section-container">
+        <h2 id="daily-updates-heading">Daily Wellness Updates</h2>
+        <p class="section-subtitle">Quick tips, inspiration, and reminders for your daily wellness journey.</p>
+
+        <div class="daily-updates-container">
+          <div class="daily-tip-card">
+            <div class="tip-header">
+              <i class="fa-solid fa-lightbulb" aria-hidden="true"></i>
+              <h3>Tip of the Day</h3>
+            </div>
+            <p id="daily-tip">Loading today's wellness tip...</p>
+            <button id="new-tip-btn" class="btn btn-outline">Get New Tip</button>
+          </div>
+
+          <div class="quick-stats">
+            <h3>Your Week at a Glance</h3>
+            <div class="stats-grid">
+              <div class="stat-item">
+                <span class="stat-number" id="week-water">0</span>
+                <span class="stat-label">Avg Water (glasses)</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number" id="week-sleep">0</span>
+                <span class="stat-label">Avg Sleep (hours)</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number" id="week-mood">0</span>
+                <span class="stat-label">Avg Mood</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number" id="week-activity">0</span>
+                <span class="stat-label">Active Days</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About/Target Audience Section -->
+    <section id="about-audience" aria-labelledby="about-audience-heading">
+      <div class="section-container">
+        <h2 id="about-audience-heading">Who We Support</h2>
+        <p class="section-subtitle">Our platform is designed for women at every stage of life who prioritize their health and wellness.</p>
+
+        <div class="audience-grid">
+          <div class="audience-card">
+            <i class="fa-solid fa-seedling" aria-hidden="true"></i>
+            <h3>Young Women (18-25)</h3>
+            <p>Building healthy habits, understanding your body, and navigating the transition to adulthood with confidence.</p>
+            <ul>
+              <li>Menstrual health education</li>
+              <li>Stress management for students</li>
+              <li>Body positivity and self-care</li>
+            </ul>
+          </div>
+
+          <div class="audience-card">
+            <i class="fa-solid fa-briefcase" aria-hidden="true"></i>
+            <h3>Working Professionals (25-40)</h3>
+            <p>Balancing career demands with personal wellness, maintaining energy, and prioritizing self-care in busy schedules.</p>
+            <ul>
+              <li>Work-life balance strategies</li>
+              <li>Reproductive health planning</li>
+              <li>Stress and burnout prevention</li>
+            </ul>
+          </div>
+
+          <div class="audience-card">
+            <i class="fa-solid fa-heart" aria-hidden="true"></i>
+            <h3>Midlife Women (40-55)</h3>
+            <p>Navigating hormonal changes, menopause, and embracing this transformative phase with vitality and wisdom.</p>
+            <ul>
+              <li>Menopause support and education</li>
+              <li>Hormonal health management</li>
+              <li>Midlife wellness optimization</li>
+            </ul>
+          </div>
+
+          <div class="audience-card">
+            <i class="fa-solid fa-sun" aria-hidden="true"></i>
+            <h3>Mature Women (55+)</h3>
+            <p>Maintaining health, vitality, and quality of life while embracing the wisdom and freedom of later years.</p>
+            <ul>
+              <li>Age-related health maintenance</li>
+              <li>Post-menopause wellness</li>
+              <li>Long-term health planning</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="inclusion-note">
+          <i class="fa-solid fa-users" aria-hidden="true"></i>
+          <div>
+            <h3>Our Commitment to Inclusion</h3>
+            <p>We welcome women of all backgrounds, identities, and life experiences. Our resources are designed to be accessible, inclusive, and culturally sensitive, supporting every woman's unique wellness journey.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Help Desk Section -->
+    <section id="help-desk" aria-labelledby="help-desk-heading">
+      <div class="section-container">
+        <h2 id="help-desk-heading">Help & Support</h2>
+        <p class="section-subtitle">Get the assistance you need. We're here to help with your wellness questions and concerns.</p>
+
+        <div class="help-desk-container">
+          <div class="help-categories">
+            <div class="help-category">
+              <i class="fa-solid fa-question-circle" aria-hidden="true"></i>
+              <h3>FAQ</h3>
+              <p>Find answers to commonly asked questions about our platform and wellness topics.</p>
+              <button class="btn btn-outline" onclick="HelpDesk.showFAQ()">Browse FAQ</button>
+            </div>
+
+            <div class="help-category">
+              <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+              <h3>Contact Support</h3>
+              <p>Need personalized help? Our support team is ready to assist you.</p>
+              <button class="btn btn-outline" onclick="HelpDesk.showContactForm()">Contact Us</button>
+            </div>
+
+            <div class="help-category">
+              <i class="fa-solid fa-book" aria-hidden="true"></i>
+              <h3>Resources</h3>
+              <p>Access our comprehensive library of wellness guides and educational materials.</p>
+              <button class="btn btn-outline" onclick="HelpDesk.showResources()">View Resources</button>
+            </div>
+
+            <div class="help-category">
+              <i class="fa-solid fa-users" aria-hidden="true"></i>
+              <h3>Community</h3>
+              <p>Connect with other women on similar wellness journeys.</p>
+              <button class="btn btn-outline" onclick="HelpDesk.showCommunity()">Join Community</button>
+            </div>
+
+            <div class="help-category">
+              <i class="fa-solid fa-comment-dots" aria-hidden="true"></i>
+              <h3>Feedback</h3>
+              <p>Share your experience to help us improve the platform.</p>
+              <button class="btn btn-outline" id="open-feedback-btn">Give Feedback</button>
+            </div>
+          </div>
+
+          <div id="help-content" class="help-content">
+            <!-- Dynamic content will be loaded here -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER / CONTACT ===== -->
+  <footer id="contact" aria-labelledby="contact-heading">
+    <div class="footer-container">
+      <h2 id="contact-heading" class="visually-hidden">Contact &amp; Resources</h2>
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="#ai-insights">AI Health Insights</a></li>
+            <li><a href="#symptom-checker">Symptom Checker</a></li>
+            <li><a href="#social-feed">Community Feed</a></li>
+            <li><a href="#daily-updates">Daily Updates</a></li>
+            <li><a href="#help-desk">Help & Support</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Resources</h3>
+          <ul class="footer-links">
+            <li><a href="#physical-health">Physical Health</a></li>
+            <li><a href="#mental-wellness">Mental Wellness</a></li>
+            <li><a href="#hormonal-health">Hormonal Health</a></li>
+            <li><a href="#wellness-tracker">Wellness Tracker</a></li>
+            <li><a href="#blog">Blog & Articles</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Contact & Support</h3>
+          <p>Have questions about your wellness journey?</p>
+          <p><strong>Email:</strong> support@womenswellness.com</p>
+          <p><strong>Help Desk:</strong> <a href="#help-desk">Get Support</a></p>
+          <p><strong>AI Assistant:</strong> Available 24/7</p>
+        </div>
+        <div class="footer-section">
+          <h3>Follow Our Community</h3>
+          <div class="social-links">
+            <a href="#" class="social-link" aria-label="Join our Facebook community">
+              <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
+            </a>
+            <a href="#" class="social-link" aria-label="Follow us on Instagram">
+              <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+            </a>
+            <a href="#" class="social-link" aria-label="Follow us on Twitter">
+              <i class="fa-brands fa-twitter" aria-hidden="true"></i>
+            </a>
+            <a href="#" class="social-link" aria-label="Join our Discord community">
+              <i class="fa-brands fa-discord" aria-hidden="true"></i>
+            </a>
+          </div>
+          <p class="footer-note">Connect with women worldwide on their wellness journeys.</p>
+        </div>
+        <div class="footer-section newsletter-section">
+          <h3>Stay Updated</h3>
+          <p>Get daily wellness tips and community updates.</p>
+          <form id="newsletter-form" class="newsletter-form">
+            <input type="email" class="newsletter-input" placeholder="Enter your email" required aria-label="Email address for newsletter">
+            <button type="submit" class="btn btn-primary">Subscribe</button>
+          </form>
+          <div class="newsletter-msg" aria-live="polite"></div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-disclaimer">
+          <p><strong>Medical Disclaimer:</strong> The information on this website is for educational purposes only and is not intended as medical advice. Always consult with qualified healthcare professionals for personalized medical guidance.</p>
+        </div>
+        <div class="footer-copyright">
+          <p>&copy; 2026 Women's Health & Wellness. All rights reserved. | <a href="#help-desk">Privacy Policy</a> | <a href="#help-desk">Terms of Service</a></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Login/Signup Modal -->
+  <div class="modal-overlay" id="auth-modal" aria-hidden="true">
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="auth-modal-title">
+      <button class="modal-close" id="auth-modal-close" aria-label="Close dialog">×</button>
+      <h3 id="auth-modal-title">Welcome back</h3>
+
+      <div class="auth-tabs">
+        <button id="auth-tab-login" class="active" type="button">Login</button>
+        <button id="auth-tab-signup" type="button">Sign Up</button>
+      </div>
+
+      <form id="login-form" class="auth-form visible" novalidate>
+        <label for="login-email">Email</label>
+        <input type="email" id="login-email" required autocomplete="email" />
+        <label for="login-password">Password</label>
+        <input type="password" id="login-password" required autocomplete="current-password" />
+        <button class="btn btn-primary" type="submit">Login</button>
+      </form>
+
+      <form id="signup-form" class="auth-form" novalidate>
+        <label for="signup-name">Full Name</label>
+        <input type="text" id="signup-name" required autocomplete="name" />
+        <label for="signup-email">Email</label>
+        <input type="email" id="signup-email" required autocomplete="email" />
+        <label for="signup-password">Password</label>
+        <input type="password" id="signup-password" required autocomplete="new-password" />
+        <button class="btn btn-primary" type="submit">Create Account</button>
+      </form>
+
+      <p class="auth-message" id="auth-message" aria-live="polite"></p>
+    </div>
+  </div>
+
+  <!-- Feedback Form Modal -->
+  <div class="modal-overlay" id="feedback-modal" aria-hidden="true">
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="feedback-modal-title">
+      <button class="modal-close" id="feedback-modal-close" aria-label="Close dialog">×</button>
+      <h3 id="feedback-modal-title">Send Feedback</h3>
+
+      <form id="feedback-form" class="feedback-form" novalidate>
+        <label for="feedback-name">Name</label>
+        <input type="text" id="feedback-name" required />
+
+        <label for="feedback-email">Email</label>
+        <input type="email" id="feedback-email" required />
+
+        <label for="feedback-message">Message</label>
+        <textarea id="feedback-message" rows="4" required></textarea>
+
+        <button class="btn btn-primary" type="submit">Submit Feedback</button>
+      </form>
+
+      <p class="feedback-status" id="feedback-status" aria-live="polite"></p>
+    </div>
+  </div>
+
+  <!-- ===== CHATBOT FAB ===== -->
+  <button class="chatbot-fab" id="chatbot-fab" aria-label="Open wellness assistant chat" aria-expanded="false">
+    <i class="fa-solid fa-comment-medical" aria-hidden="true"></i>
+  </button>
+
+  <div class="chatbot-panel" id="chatbot-panel" aria-hidden="true" role="dialog" aria-label="Wellness assistant">
+    <div class="chatbot-header">
+      <h3>Wellness Assistant</h3>
+      <button id="chatbot-close" aria-label="Close chat">
+        <i class="fa-solid fa-times" aria-hidden="true"></i>
+      </button>
+    </div>
+    <div class="chatbot-messages" id="chatbot-messages" aria-live="polite">
+      <div class="chat-message chat-message--bot">Hello! I'm here to help with your wellness questions. What would you like to know?</div>
+    </div>
+    <form id="chatbot-form" class="chatbot-input-form">
+      <input type="text" id="chatbot-input" placeholder="Ask me about stress, water, sleep..." aria-label="Type your wellness question">
+      <button type="submit" aria-label="Send message">
+        <i class="fa-solid fa-paper-plane" aria-hidden="true"></i>
+      </button>
+    </form>
+  </div>
+
+  <!-- AOS JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+          integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="app.js"></script>
+</body>
+</html>
